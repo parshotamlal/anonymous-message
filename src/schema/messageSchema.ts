@@ -1,7 +1,7 @@
 import {z} from "zod";
 
 
-export const signInSchema = z.object({
+export const messageSchema = z.object({
 
     content:z
     .string()
