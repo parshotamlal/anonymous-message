@@ -10,7 +10,7 @@ verifyCode:string,
     try{
         await resend.emails.send({
   from: 'parshotamworks@gmail.com',
-  to: 'email',
+  to: email,
   subject: 'Verification code',
   react: VerificationEmail({username,otp:verifyCode}),
 });
