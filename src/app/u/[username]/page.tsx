@@ -1,11 +1,11 @@
 import React from 'react'
 
-function tss() {
+function page() {
   return (
     <div>
-      helloo
+      massage
     </div>
   )
 }
 
-export default tss
+export default page

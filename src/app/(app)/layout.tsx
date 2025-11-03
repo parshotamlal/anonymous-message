@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css"; // global CSS must be on top
+import Navbar from "@/components/navbar";
+// import "./globals.css"; // global CSS must be on top
 
 import { Geist, Geist_Mono } from "next/font/google";
 import AuthProvider from "@/context/AuthProvider";
@@ -28,7 +29,8 @@ export default function RootLayout({
     <html lang="en">
       <AuthProvider>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        
+        <Navbar />
+       
           {children}
      
       </body>
